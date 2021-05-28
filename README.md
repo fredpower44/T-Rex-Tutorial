@@ -50,7 +50,7 @@ sudo gedit /etc/trex_cfg.yaml
 ```
 Here is an example of a 2-port configuration. (Note: YAML files are strict with spacing. DO NOT use tabs.)
 ```
- port_limit    : 2 # Increase if you would like more interfaces. Use even numbers.
+- port_limit    : 2 # Increase if you would like more interfaces. Use even numbers.
   version       : 2
   low_end       : true
   interfaces    : ["veth1", "veth2"]   # list of the interfaces to bind run ./dpdk_nic_bind.py --status
