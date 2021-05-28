@@ -34,9 +34,9 @@ cd vX.XX
 ```
 
 ## First Time Configuration of Network Interfaces
-T-Rex operates using the network interfaces on your machine as its ports. To create a virtual ethernet pair, run the following.
+T-Rex operates by using the network interfaces on your machine as its ports. To create a virtual ethernet pair, run the following.
 ```sh
-ip link add veth1 type veth peer name veth2
+sudo ip link add veth1 type veth peer name veth2
 ```
 
 To configure using the T-Rex port setup script provided in the installation, simply run the following script and follow the instructions. This script will create a config file `/etc/trex_cfg.yaml`. You can read more on [section 3.2](https://trex-tgn.cisco.com/trex/doc/trex_manual.html#_script_for_creating_config_file) of T-Rex's official documentation
@@ -60,12 +60,8 @@ Here is an example of a 2-port configuration. (Note: YAML files are strict with 
                    default_gw : 2.2.2.2
                  - ip         : 2.2.2.2
                    default_gw : 1.1.1.1
-                 - ip         : 3.3.3.3
-                   default_gw : 1.1.1.1
-                 - ip         : 4.4.4.4
-                   default_gw : 1.1.1.1
 ```
-Trex is now configured to generate traffic across veth1 and veth2.
+T-Rex is now configured to map port 0 and port 1 to veth1 and veth2 respectively.
 
 ## Running T-Rex
 To run T-Rex, simply execute this command.
