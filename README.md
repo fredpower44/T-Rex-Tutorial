@@ -61,7 +61,7 @@ Here is an example of a 2-port configuration. (Note: YAML files are strict with 
                  - ip         : 2.2.2.2
                    default_gw : 1.1.1.1
 ```
-T-Rex is now configured to map port 0 and port 1 to veth1 and veth2 respectively.
+T-Rex is now configured to map port 0 and port 1 to veth1 and veth2 respectively. You can add any network interfaces that you would like (eth, tap, veth, br, etc.). Just make sure to increase the port_limit
 
 ## Running T-Rex
 To run T-Rex, simply execute this command.
@@ -119,13 +119,13 @@ tui
 ```
 
  ### Python API
- The other way to interface with T-Rex is by using the Python API. There are pre-written Python scripts to look at in the `automation/trex_control_plane/interactive/trex/examples` directory. Let's try running `stl_simple_burst.py`.
+ The other way to interface with T-Rex is by using the Python API. There are example Python scripts to look at in the `automation/trex_control_plane/interactive/trex/examples` directory. Try running `stl_simple_burst.py`.
  ```sh
  python3 automation/trex_control_plane/interactive/trex/examples/stl_simple_burst.py
  ```
  Again, once this python script is running, you can check the T-Rex application and see traffic running between the ports.
  <br><br>
- The Python API has various features that gives you full control of the kind of traffic you are sending over the ports. You can change source and destination MAC addresses, IPv4's, and ports. For more information on how to customize your traffic generator, visit the T-Rex [Python API Documentation](https://trex-tgn.cisco.com/trex/doc/cp_stl_docs/api/client_code.html).
+ The Python API has various features that gives you full control of the kind of traffic you are sending over the ports. You can change source and destination MAC addresses, IPv4's, and ports. For more information on how to customize your traffic generator using the Python API, visit the T-Rex [Python API Documentation](https://trex-tgn.cisco.com/trex/doc/cp_stl_docs/api/client_code.html).
 
  ## That is all!
- You can now create custom traffic profiles and Python scripts to generate traffic across whatever ports you would like! :)
+ You can now create custom traffic profiles and Python scripts to generate traffic across your network! :)
