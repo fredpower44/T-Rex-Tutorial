@@ -79,7 +79,7 @@ You should now see the console running T-Rex. Here is what that should look like
      ibytes |               0 |               0 | 
     ierrors |               0 |               0 | 
     oerrors |               0 |               0 | 
-      Tx Bw |       0.00  bps |       0.00  bps |       0.00  bps |       0.00  bps 
+      Tx Bw |       0.00  bps |       0.00  bps |   
 
 -Global stats enabled 
  Cpu Utilization : 0.0  %
